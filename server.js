@@ -28,7 +28,7 @@ app.use(express.static(__dirname + '/public'));
 if(env === 'development') {
  	mongoose.connect('mongodb://localhost/meantraining');	
 } else {
-	mongoose.connect('mongodb://dbmean:dbmean@ds049160.mongolab.com:49160/heroku_app31184022');	
+	mongoose.connect('mongodb://dbmean:dbmean@ds049160.mongolab.com:49160/heroku_app31184641');	
 }
 
 var db = mongoose.connection;
