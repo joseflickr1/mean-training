@@ -1,51 +1,19 @@
 var express = require('express'),
-	stylus = require('stylus'),
-	logger = require('morgan'),
-	bodyParser = require('body-parser'),
 	mongoose = require('mongoose');
 
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 var app = express();
 
-function compile(str, path) {
-	return stylus(str).set('filename', path);
-}
+var config = require('./server/config/config')[env];
+require('./server/config/express')(app, config);
 
-app.set('views', __dirname + '/server/views');
-app.set('view engine', 'jade');
-app.use(logger('dev'));
-app.use(bodyParser());
+require('./server/config/mongoose')(config);
 
-app.use(stylus.middleware(
-	{
-		src: __dirname + '/public',
-		compile: compile
-	}
-));
-app.use(express.static(__dirname + '/public'));
-
-if(env === 'development') {
- 	mongoose.connect('mongodb://localhost/meantraining');	
-} else {
-	mongoose.connect('mongodb://dbmean:dbmean@ds049160.mongolab.com:49160/heroku_app31184641');	
-}
-
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error...'));
-db.once('open', function callback() {
-	console.log('meantraining db opened');
-});
+require('./server/config/routes')(app);
 
 
-app.get('/partials/*', function(req, res) {
-	res.render('partials/' + req.params[0]);
-});
 
-app.get('*', function(req, res) {
-	res.render('index');
-});
 
-var port = process.env.PORT || 3030;
-app.listen(port);
-console.log('Listening on port' + port + '...');
+app.listen(config.port);
+console.log('Listening on port' + config.port + '...');
