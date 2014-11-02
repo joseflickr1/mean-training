@@ -9,4 +9,21 @@ module.exports = function(config) {
 	db.once('open', function callback() {
 		console.log('meantraining db opened');
 	});	
+
+	var userSchema = mongoose.Schema({
+		firstName: String,
+		lastName: String,
+		username: String
+
+	});
+	var User = mongoose.model('User', userSchema);
+
+	User.find({}).exec(function(err,collection) {
+		if(collection.length === 0) {
+			User.create({firstName: 'Joe', lastName: 'James', username: 'joe'});
+			User.create({firstName: 'John', lastName: 'Papa', username: 'john'});
+			User.create({firstName: 'Dan', lastName: 'Wahlin', username: 'dan'});
+
+		}
+	})
 }
