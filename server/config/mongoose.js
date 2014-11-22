@@ -16,7 +16,8 @@ module.exports = function(config) {
 		lastName: String,
 		username: String,
 		salt: String,
-		hashed_pwd: String
+		hashed_pwd: String,
+		roles: [String]
 
 	});
 	var User = mongoose.model('User', userSchema);
@@ -27,11 +28,13 @@ module.exports = function(config) {
 
 			salt = createSalt();
 			hash = hashPwd(salt, 'joe');
-			User.create({firstName: 'Joe', lastName: 'James', username: 'joe', salt: salt, hashed_pwd: hash});
+			User.create({firstName: 'Joe', lastName: 'James', username: 'joe', salt: salt, hashed_pwd: hash,
+						roles: ['admin']});
 
 			salt = createSalt();
 			hash = hashPwd(salt, 'joe');
-			User.create({firstName: 'John', lastName: 'Papa', username: 'john', salt: salt, hashed_pwd: hash});
+			User.create({firstName: 'John', lastName: 'Papa', username: 'john', salt: salt, hashed_pwd: hash,
+						roles: []});
 			
 			salt = createSalt();
 			hash = hashPwd(salt, 'joe');
