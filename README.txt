@@ -4,7 +4,8 @@ mean-training/nodemon server.js
 
 
 START LOCAL MONGODB SERVER
-Documents/tools/mongodb/bin/mongod --dbpath data/db
+cd Documents/tools/
+mongodb/bin/mongod --dbpath data/db
 
 PUSH TO HERUKO
 git status
