@@ -1,6 +1,6 @@
 
 var mongoose = require('mongoose'),
-	encrypt = require('../utilities/encryption');
+	userModel = require('../models/Users');
 
 module.exports = function(config) {
 	mongoose.connect(config.db);	
@@ -11,37 +11,8 @@ module.exports = function(config) {
 		console.log('meantraining db opened');
 	});	
 
-	var userSchema = mongoose.Schema({
-		firstName: String,
-		lastName: String,
-		username: String,
-		salt: String,
-		hashed_pwd: String,
-		roles: [String]
+	userModel.createDefaultUsers();
 
-	});
-	var User = mongoose.model('User', userSchema);
-
-	User.find({}).exec(function(err,collection) {
-		if(collection.length === 0) {
-			var salt, hash;
-
-			salt = encrypt.createSalt();
-			hash = encrypt.hashPwd(salt, 'joe');
-			User.create({firstName: 'Joe', lastName: 'James', username: 'joe', salt: salt, hashed_pwd: hash,
-						roles: ['admin']});
-
-			salt = encrypt.createSalt();
-			hash = encrypt.hashPwd(salt, 'joe');
-			User.create({firstName: 'John', lastName: 'Papa', username: 'john', salt: salt, hashed_pwd: hash,
-						roles: []});
-			
-			salt = encrypt.createSalt();
-			hash = encrypt.hashPwd(salt, 'joe');
-			User.create({firstName: 'Dan', lastName: 'Wahlin', username: 'dan', salt: salt, hashed_pwd: hash});
-
-		}
-	})
 }
 
 
