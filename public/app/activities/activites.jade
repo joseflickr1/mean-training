@@ -1,0 +1,10 @@
+.container
+
+	.jumbotron
+		p List of activites
+
+	.row
+		.col-md-offset-3.col-md-6
+			a(href="/addactivity") + legg til
+			div(ng-repeat="activity in activities")
+				span {{activity.activityName}}	

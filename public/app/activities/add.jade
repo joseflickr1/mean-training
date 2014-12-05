@@ -1,0 +1,16 @@
+.container
+	.well
+		form.form-horizontal(name="addActivityForm")
+			fieldset
+				legend Dagens aktivitet
+				.form-group
+					label.col-md-2.control-label(for="activityName") Aktivitet
+					.col-md-10
+						input.form-control(name="activityName", type="activityName", placeholder="aktivitet", ng-model="activityName", required)
+				
+				.form-group
+					.col-md-10.col-md-offset-2
+						.pull-right
+							button.btn.btn-primary(ng-click="add()") Legg til
+							| &nbsp;
+							a.btn.btn-default(href="/") Avbryt

@@ -40,5 +40,11 @@ var mongoose = require('mongoose'),
 		})	
 	};
 
+	function findOneUserByFirstName(name, callback) {
+		User.find({username: name}, callback);
+
+	}
+
 exports.createDefaultUsers = createDefaultUsers;
+exports.findOneUserByFirstName = findOneUserByFirstName;
 	
