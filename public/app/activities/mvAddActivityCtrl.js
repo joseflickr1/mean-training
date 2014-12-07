@@ -1,4 +1,4 @@
-angular.module('app').controller('mvAddActivityCtrl', function($scope, mvNotifier, $location, mvActivityService, mvActivity) {
+angular.module('app').controller('mvAddActivityCtrl', function($scope , mvNotifier, $location, mvActivityService, mvActivity) {
 
 	$scope.activities = mvActivity.query();
 
@@ -9,7 +9,7 @@ angular.module('app').controller('mvAddActivityCtrl', function($scope, mvNotifie
 
 		
 		mvActivityService.createActivity(newActivity).then(function() {
-			mvNotifier.notify('New actitvity created!');
+			// mvNotifier.notify('New actitvity created!');
 			$location.path('/activites');
 
 			$scope.activities = mvActivity.query();
@@ -18,5 +18,14 @@ angular.module('app').controller('mvAddActivityCtrl', function($scope, mvNotifie
 		}, function(reason) {
 			mvNotifier.error(reason);
 		})
-	}
+	};
+
+	$scope.getTimeAgo = function(last_updated_time ){
+
+		  moment.locale('no');
+
+	     return moment(last_updated_time).fromNow();
+
+ 	};
+
 })
