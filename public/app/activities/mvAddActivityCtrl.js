@@ -1,10 +1,12 @@
-angular.module('app').controller('mvAddActivityCtrl', function($scope , mvNotifier, $location, mvActivityService, mvActivity) {
+angular.module('app').controller('mvAddActivityCtrl', function($scope, mvNotifier, $location, mvActivityService, mvActivity, mvIdentity) {
 
 	$scope.activities = mvActivity.query();
 
 	$scope.add = function() {
+
 		var newActivity = {
-			activityName: $scope.activityName
+			activityName: $scope.activityName,
+			userId: mvIdentity.currentUser._id
 		};
 
 		

@@ -3,9 +3,12 @@ var Activity = require('mongoose').model('Activity');
 
 exports.getActivities = function(req, res) {
 	
-	Activity.find({}).exec(function(err, collection) {
+
+	Activity.find({}).populate('userId').exec(function(err, collection) {
 		res.send(collection);
 	})
+
+
 };
 
 

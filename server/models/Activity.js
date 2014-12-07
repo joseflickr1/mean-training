@@ -3,7 +3,8 @@ var mongoose = require('mongoose');
 
 	var activitySchema = mongoose.Schema({
 		created: {type: Date, default: Date.now},
-		activityName: {type: String}
+		activityName: {type: String},
+		userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
 
 	});
 
