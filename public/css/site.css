@@ -1,5 +1,36 @@
 body {
-  padding-top: 61px;
+  background-color: #e9eaed;
+  padding-bottom: 61px;
+  padding-top: 50px;
+}
+.navbar-inverse {
+  background-color: #3d5b99;
+  color: #ddedef;
+  border: none;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a b {
+  margin-left: 10px;
+}
+.navbar-inverse .navbar-nav >.open > a:hover,
+.navbar-inverse .navbar-nav >.open > a:focus,
+.navbar-inverse .navbar-nav >.open > a {
+  background-color: transparent;
+}
+.menu-bar {
+  margin-top: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+  width: 20px;
+}
+.menu-bar .icon-bar {
+  background-color: #fff;
+  width: 20px;
+  height: 2px;
+  margin-top: 4px;
+  display: block;
 }
 .navbar-header a.navbar-brand {
   margin-top: -15px;
