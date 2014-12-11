@@ -1,7 +1,6 @@
 body {
   background-color: #e9eaed;
   padding-bottom: 61px;
-  padding-top: 50px;
 }
 .navbar-inverse {
   background-color: #3d5b99;
@@ -53,8 +52,9 @@ footer p {
   margin-left: 10px;
 }
 .toast-top-right {
-  top: 70px;
+  top: 50%;
+  right: 50px;
 }
 .toast-success {
-  background-color: #13987e;
+  background-color: #4c6eb3;
 }
