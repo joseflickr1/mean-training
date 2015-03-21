@@ -1,8 +1,10 @@
 .container
 
-
 	.row
 		.col-md-offset-3.col-md-6
+
+			textarea.col-md-12
+
 			form.form-horizontal(name="addActivityForm")
 				.form-group
 					label.col-md-2.control-label(for="activityName") 
@@ -22,9 +24,7 @@
 		.col-md-offset-3.col-md-6
 			//- a(href="/addactivity") + legg til
 			ul.list-group
-				li.list-group-item(ng-repeat="activity in activities | filter:query | orderBy: activity.created" ng-hide="activity.disable") 
-
+				li.list-group-item(ng-repeat="activity in activities | filter:query | orderBy: 'created':true | limitTo:10" ) 
 					{{activity.activityName}}	{{activity.userId.lastName}} {{getTimeAgo(activity.created)}}
-					button.btn(ng-click="hideAllButThis(activity)") hide all but this
 
 					

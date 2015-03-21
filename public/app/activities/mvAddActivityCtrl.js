@@ -22,14 +22,6 @@ angular.module('app').controller('mvAddActivityCtrl', function($scope, mvNotifie
 		})
 	};
 
-	$scope.hideAllButThis = function (obj) {
-
-		angular.forEach($scope.activities, function (value, key) {
-			value.disable = true			
-				if(obj._id === value._id)
-					value.disable = false;
-		});
-	};
 
 	$scope.getTimeAgo = function(last_updated_time ){
 
