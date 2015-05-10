@@ -1,19 +1,25 @@
-.container
-	.jumbotron
-		h1 Hva har du gjort i dag .. 
-		p - del med andre hva du har gjor i dag. 
+fa-app.container(ng-controller="mvNavBarLoginCtrl" )
 
-		.div(ng-controller="mvNavBarLoginCtrl")
+	fa-surface.jumbotron(fa-size="[auto, 400]")
+		.h1 Hva har du gjort i dag .. 
+		.p - del med andre hva du har gjor i dag. 
 
-				form(ng-hide="identity.isAuthenticated()")
-							
-					.form-group
-						input.form-control(placeholder="Email", ng-model="username")
-					.form-group
-						input.form-control(type="password" placeholder="Password", ng-model="password")
-					button.btn.btn-primary(ng-click="signin(username, password)") Logg inn
-					span &nbsp; eller &nbsp;
-						a(href="/signup") registrer
+		fa-app
+			fa-modifier(fa-scale="scale.get()" fa-size="[300,100]")
+				fa-surface
+					form(ng-hide="identity.isAuthenticated()")
+						
+						.form-group
+							input.form-control(placeholder="Email", ng-model="username")
+
+						.form-group
+							input.form-control(type="password" placeholder="Password", ng-model="password")
+						fa-app
+							fa-modifier(fa-rotate-z="rotate.get()")
+								fa-surface(fa-size="[500,900]")
+									.button.btn.btn-primary(ng-click="signin(username, password)") Logg inn
+									span &nbsp; eller &nbsp;
+										a(href="/signup") registrer
 
 	//- .row
 	//- 	.col-md-6
