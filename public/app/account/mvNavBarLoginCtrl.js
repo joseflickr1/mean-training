@@ -5,6 +5,11 @@ angular.module('app').controller('mvNavBarLoginCtrl', function($scope, $http, $r
     var SpringTransition = $famous['famous/transitions/SpringTransition'];
     Transitionable.registerMethod('spring', SpringTransition);
 
+
+    angular.element(document).ready(function(){
+	  angular.element(".owl-carousel").owlCarousel();
+	});
+
     $scope.myGridLayoutOptions = {
     	dimentions : [2,3]
     };
