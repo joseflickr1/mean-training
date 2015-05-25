@@ -1,0 +1,18 @@
+.design-play(ng-controller="mvDesignCtrl" )
+	.row
+		.col-sm-6
+			.video-wrapper
+				video(preload="auto", loop="loop", id="video-design-play", autoplay="autoplay")
+					source(ng-src="{{src}}", type="video/mp4")
+				.video-text
+					p Studer når som helst
+		.col-sm-6
+			.sell-content
+				.block
+					p Månedsabonnement
+					span kr 149,-
+					button.btn.btn-primary Kjøp nå
+				.block
+					p Årsabonnement	
+					span kr 149,-
+					button.btn.btn-primary Kjøp nå

@@ -22,6 +22,8 @@ angular.module('app').config(function($routeProvider, $locationProvider){
 	$routeProvider
 	
 	.when('/', {templateUrl: '/partials/main/main', controller: 'mvMainCtrl'})
+
+	.when('/design', {templateUrl: '/partials/design/design', controller: 'mvDesignCtrl'})
 	
 	.when('/activites', {templateUrl: '/partials/activities/activites', 
 		controller: 'mvAddActivityCtrl', resolve: routeRoleChecks.user
