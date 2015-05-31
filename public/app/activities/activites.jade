@@ -27,4 +27,5 @@
 				li.list-group-item(ng-repeat="activity in activities | filter:query | orderBy: 'created':true | limitTo:10" ) 
 					{{activity.activityName}}	{{activity.userId.lastName}} {{getTimeAgo(activity.created)}}
 
-					
+	div(ng-include="'/partials/courses/course-list'")
+
