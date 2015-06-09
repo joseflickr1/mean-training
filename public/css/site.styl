@@ -153,7 +153,16 @@ footer
 .design-forside-2 .design-play .video-text
 	color: green
 	padding: 9em
+	position: relative
 
+.design-forside-2 .design-play .video-text .block-img
+	top: 108px
+	right: 48px
+	position: absolute
+	z-index: -1
+
+.design-forside-2 .design-play .video-text .block-img img
+	height: 318px
 
 .design-forside-2 .design-play .sell-content
 	padding: 6em
@@ -169,12 +178,19 @@ footer
 	border: none
 
 @media (max-width: 768px)
+
+	.design-forside-2 .design-play .video-text .block-img
+		top: 5px
+
 	
 	.design-forside-2 .design-play .video-text
 		padding: 2em 4em
 
 	.design-forside-2 .design-play .sell-content
 		padding: 0 4em
+
+	.design-forside-2 .design-play .sell-content .block
+		background-color: #fff
 
 	.design-forside-2 .design-play .sell-content .block H1, 
 	.design-forside-2 .design-play .video-text .block H1	
