@@ -1,30 +1,30 @@
 extends ../includes/layout
 
 block main-content
-	//- .navbar.navbar-inverse.navbar-fixed-top
-	//- 	.container
-	//- 		.navbar-header
-	//- 			a.navbar-brand(href="/") Meantraining
-	//- 				h6 -Extreme Tech Training
-	//- 		.navbar-collapse.collapse
-	//- 			ul.nav.navbar-nav
-	//- 				li
-	//- 					a(href="/") Home
-	//- 			div(ng-include="'/partials/account/navbar-login'")
+	.navbar.navbar-inverse.navbar-fixed-top
+		.container
+			.navbar-header
+				a.navbar-brand(href="/") Meantraining
+					h6 -Extreme Tech Training
+			.navbar-collapse.collapse
+				ul.nav.navbar-nav
+					li
+						a(href="/") Home
+				div(ng-include="'/partials/account/navbar-login'")
 	section.content
 		div(ng-view) 		
 
 
 
-	.navbar.navbar-inverse.navbar-fixed-bottom
-		div.row
-			div.col-xs-4.col-xs-offset-7
-				div(ng-include="'/partials/account/navbar-login'")
-			div.col-xs-1
-				div.menu-bar.pull-right
-					span.icon-bar
-					span.icon-bar
-					span.icon-bar
+	//- .navbar.navbar-inverse.navbar-fixed-bottom
+	//- 	div.row
+	//- 		div.col-xs-4.col-xs-offset-7
+	//- 			div(ng-include="'/partials/account/navbar-login'")
+	//- 		div.col-xs-1
+	//- 			div.menu-bar.pull-right
+	//- 				span.icon-bar
+	//- 				span.icon-bar
+	//- 				span.icon-bar
 
 	//- footer.container.text-center
 	//- 	p &copy; 2014 Meantraining Corp International Ltd.
