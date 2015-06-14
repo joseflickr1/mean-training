@@ -9,11 +9,11 @@ angular.module('app').controller('mvDesignCtrl', function($scope) {
 	    items:2,
 	    loop:true,
 	    margin:10,
-	    dots: true,
+	    dots: false,
 	    autoWidth: true,
 	    responsive:{
 	        600:{
-	            items:4
+	            items:2
 	        }
 	    }
 	  });
