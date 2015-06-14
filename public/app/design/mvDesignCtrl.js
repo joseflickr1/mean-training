@@ -7,15 +7,12 @@ angular.module('app').controller('mvDesignCtrl', function($scope) {
 	  angular.element(".owl-carousel").owlCarousel({
 	  	center: false,
 	    items:1,
+	    slideSpeed: 200,
 	    loop:true,
 	    margin:10,
-	    dots: false,
+	    dots: true,
 	    autoWidth: true,
-	    responsive:{
-	        600:{
-	            items:1
-	        }
-	    }
+	    
 	  });
 	});
 
