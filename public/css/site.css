@@ -232,7 +232,7 @@ footer {
 		-webkit-background-clip: text
 		-webkit-text-fill-color: transparent*/
   }
-  .wrapper-test {
+  .design-forside-2 .sell-content .wrapper-test {
     width: 100%;
 /*height: 100px;*/
 /*background: #eee;*/
@@ -240,11 +240,11 @@ footer {
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
   }
-  .content {
+  .design-forside-2 .sell-content .content {
 /*width: auto;*/
     white-space: nowrap;
   }
-  .item {
+  .design-forside-2 .sell-content .item {
     display: inline-block;
 /*width: 200px;*/
     height: 100px;
@@ -253,3 +253,6 @@ footer {
 /*		transition: 10s; 
 		-webkit-transition: 10s;
 */
+.design-forside-2 .video-text-2 .item {
+  width: 30em;
+}
