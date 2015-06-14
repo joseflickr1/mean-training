@@ -168,21 +168,21 @@ footer p {
 }
 @media (max-width: 768px) {
   .design-forside-2 .design-play .video-text {
-    padding: 2em 4em;
+    padding: 2em 1em;
     height: 15em;
   }
   .design-forside-2 .design-play .video-text .block p {
-    font-size: 1.2em;
+    font-size: 1.6em;
   }
   .design-forside-2 .design-play .video-text .block-img img {
     height: 180px;
   }
   .design-forside-2 .design-play .video-text .block-img {
     top: 25px;
-    left: 225px;
+    left: 215px;
   }
   .design-forside-2 .design-play .sell-content {
-    padding: 0 4em;
+    padding: 0 1em;
   }
   .design-forside-2 .design-play .sell-content .block {
     background-color: #fff;
