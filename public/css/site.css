@@ -125,7 +125,7 @@ footer p {
 /* design-forside-2 */
 /********************/
 .design-forside-2 .design-play {
-  width: 100%;
+/*width: 100%*/
   font-family: 'Roboto', serif;
 }
 .design-forside-2 .design-play .sell-content .block H1,
