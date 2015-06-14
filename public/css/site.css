@@ -167,6 +167,12 @@ footer p {
   border: none;
 }
 @media (max-width: 768px) {
+  .design-forside-2 .sell-content .block span {
+    font-size: 22px;
+  }
+  .design-forside-2 .sell-content .block button.btn.btn-primary {
+    font-size: 12px;
+  }
   .design-forside-2 .video-text {
     padding: 2em 1em;
     height: 15em;
@@ -182,11 +188,13 @@ footer p {
     right: 10%;
   }
   .design-forside-2 .sell-content {
-    padding: 0 1em;
+    padding: 2em 1em;
   }
   .design-forside-2 .sell-content .block {
     background-color: #fff;
-    width: 260px;
+    width: 220px;
+    border-right: 1px solid #eee;
+    margin-left: 0.2em;
   }
   .design-forside-2 .sell-content .block H1,
   .design-forside-2 .video-text .block H1 {
@@ -194,7 +202,15 @@ footer p {
   }
   .design-forside-2 .sell-content .block H2,
   .design-forside-2 .video-text .block H2 {
-    font-size: 2em;
+    font-size: 3em;
     margin: 27px 0;
+    background: #000;
+    background: -moz-linear-gradient(left, #000 77%, #fff 84%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(77%, #000), color-stop(84%, #fff));
+    background: -o-linear-gradient(left, #000 77%, #fff 84%);
+    background: -ms-linear-gradient(left, #000 77%, #fff 84%);
+    background: linear-gradient(to right, #000 77%, #fff 84%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }

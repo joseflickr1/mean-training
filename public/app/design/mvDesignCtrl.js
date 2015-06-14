@@ -9,8 +9,7 @@ angular.module('app').controller('mvDesignCtrl', function($scope) {
 	    items:2,
 	    loop:true,
 	    margin:10,
-	    dots: false,
-	    smartSpeed: 1000,
+	    dots: true,
 	    autoWidth: true,
 	    responsive:{
 	        600:{
