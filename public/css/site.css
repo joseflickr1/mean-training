@@ -147,7 +147,7 @@ footer p {
 }
 .design-forside-2 .video-text .block-img {
   top: 92px;
-  left: 335px;
+  right: 10%;
   position: absolute;
   z-index: -1;
 }
@@ -179,7 +179,7 @@ footer p {
   }
   .design-forside-2 .video-text .block-img {
     top: 25px;
-    left: 33%;
+    right: 10%;
   }
   .design-forside-2 .sell-content {
     padding: 0 1em;
