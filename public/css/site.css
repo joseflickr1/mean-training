@@ -124,43 +124,46 @@ footer p {
 }
 /* design-forside-2 */
 /********************/
-.design-forside-2 {
+.design-forside-2,
+.design-forside-2 H1,
+.design-forside-2 H2 {
 /*width: 100%*/
   font-family: 'Roboto', serif;
 }
-.design-forside-2 .sell-content .block H1,
-.design-forside-2 .video-text .block H1 {
+.design-forside-2 .sell-content .block-dk H1,
+.design-forside-2 .video-text .block-dk H1 {
   font-size: 4em;
 }
-.design-forside-2 .sell-content .block H2,
-.design-forside-2 .video-text .block H2 {
+.design-forside-2 .sell-content .block-dk H2,
+.design-forside-2 .video-text .block-dk H2 {
   font-size: 3em;
   margin: 27px 0;
 }
-.design-forside-2 .sell-content .block p,
-.design-forside-2 .video-text .block p {
+.design-forside-2 .sell-content .block-dk p,
+.design-forside-2 .video-text .block-dk p {
   font-size: 2em;
+  max-width: 250px;
 }
 .design-forside-2 .video-text {
   padding: 9em 6em;
   position: relative;
 }
-.design-forside-2 .video-text .block-img {
+.design-forside-2 .video-text .block-dk-img {
   top: 92px;
   right: 10%;
   position: absolute;
   z-index: -1;
 }
-.design-forside-2 .video-text .block-img img {
+.design-forside-2 .video-text .block-dk-img img {
   height: 318px;
 }
 .design-forside-2 .sell-content {
   padding: 6em;
 }
-.design-forside-2 .sell-content .block {
+.design-forside-2 .sell-content .block-dk {
   margin: 0 0 4em 0;
 }
-.design-forside-2 .sell-content .block button.btn.btn-primary {
+.design-forside-2 .sell-content .block-dk button.btn.btn-primary {
   font-size: 14px;
   margin-left: 20px;
   background-color: #4677ae;
@@ -181,22 +184,22 @@ footer {
   .main-padding-top {
     padding-top: 10em;
   }
-  .design-forside-2 .sell-content .block span {
+  .design-forside-2 .sell-content .block-dk span {
     font-size: 2em;
     vertical-align: middle;
   }
-  .design-forside-2 .sell-content .block button.btn.btn-primary {
+  .design-forside-2 .sell-content .block-dk button.btn.btn-primary {
     font-size: 1.2em;
   }
   .design-forside-2 .video-text {
     padding: 2em 1em;
     height: 15em;
   }
-  .design-forside-2 .video-text .block p {
+  .design-forside-2 .video-text .block-dk p {
     font-size: 1.6em;
   }
-  .design-forside-2 .video-text .block-img img,
-  .design-forside-2 .video-text .block-img {
+  .design-forside-2 .video-text .block-dk-img img,
+  .design-forside-2 .video-text .block-dk-img {
     top: -280px;
     right: 10%;
   }
@@ -209,17 +212,17 @@ footer {
   .design-forside-2 .sell-content .owl-stage {
     height: 7em;
   }
-  .design-forside-2 .sell-content .block {
+  .design-forside-2 .sell-content .block-dk {
     width: 205px;
     border-right: 1px solid #eee;
     margin: 1em 0.6em 0 0.3em;
   }
-  .design-forside-2 .sell-content .block H1,
-  .design-forside-2 .video-text .block H1 {
+  .design-forside-2 .sell-content .block-dk H1,
+  .design-forside-2 .video-text .block-dk H1 {
     font-size: 3em;
   }
-  .design-forside-2 .sell-content .block H2,
-  .design-forside-2 .video-text .block H2 {
+  .design-forside-2 .sell-content .block-dk H2,
+  .design-forside-2 .video-text .block-dk H2 {
     line-height: 41px;
     font-size: 1.4em;
     margin: 0;
