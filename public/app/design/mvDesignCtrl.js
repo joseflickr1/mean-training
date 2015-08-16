@@ -5,13 +5,20 @@ angular.module('app').controller('mvDesignCtrl', function($scope) {
 
     angular.element(document).ready(function(){
 	  angular.element(".owl-carousel").owlCarousel({
-	  	center: false,
+	  	// center: false,
+		navText: ['previous','next'],
 	    items:1,
-	    slideSpeed: 200,
 	    loop:true,
-	    margin:10,
-	    dots: true,
-	    autoWidth: true,
+	    nav: true,
+	    margin:0,
+	    dots: false,
+	    animateOut: 'fadeOut',
+	    animateIn: 'fadeIn',
+	    // autoWidth: false,
+		// autoplay:true,
+
+	    smartSpeed: 1000
+
 	    
 	  });
 	});

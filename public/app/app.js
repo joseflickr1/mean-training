@@ -26,6 +26,8 @@ angular.module('app').config(function($routeProvider, $locationProvider){
 	.when('/design', {templateUrl: '/partials/design/design', controller: 'mvDesignCtrl'})
 	.when('/design-forside-2', {templateUrl: '/partials/design/design-forside-2', controller: 'mvDesignCtrl'})
 
+	.when('/design/tp', {templateUrl: '/partials/design/tp/index.jade', controller: 'mvDesignCtrl'})
+
 	
 	
 	.when('/activites', {templateUrl: '/partials/activities/activites', 

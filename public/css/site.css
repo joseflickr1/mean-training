@@ -1,6 +1,41 @@
-body {
-  padding-bottom: 61px;
+/* tp design */
+.tp {
+  font-family: 'Raleway Thin';
+  font-size: 2em;
 }
+.navbar-inverse.tp {
+  background-color: transparent;
+}
+.navbar-inverse.tp .navbar-nav > li > a {
+  color: #fff;
+  background: #000;
+  padding: 15px 10px 10px 10px;
+  letter-spacing: 6px;
+}
+.animated {
+  -webkit-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owl-theme .owl-controls {
+  position: fixed;
+  bottom: 0;
+  left: 6%;
+  z-index: 1030;
+}
+.owl-theme .owl-controls .owl-nav .owl-prev,
+.owl-theme .owl-controls .owl-nav .owl-next {
+  background: #000;
+  font-size: 0.9em;
+  border-radius: inherit;
+  letter-spacing: 4px;
+  padding: 5px 10px 5px 10px;
+}
+.picture {
+  height: 70em;
+}
+/* tp design */
 .navbar-inverse {
   background-color: #3d5b99;
   color: #ddedef;
@@ -42,7 +77,7 @@ footer {
   padding-right: 15px;
 }
 footer p {
-  border-top: 1px solid #d7e0e2;
+  float: right;
 }
 .navbar-form .form-group {
   margin-left: 10px;
@@ -296,6 +331,6 @@ footer {
 }
 .jose {
   font-family: 'Raleway Thin';
-  padding-top: 10em;
+  padding-top: 1em;
   font-size: 4em;
 }
