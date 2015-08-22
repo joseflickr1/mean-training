@@ -12,11 +12,12 @@ body
 .navbar-inverse.tp
 	background-color transparent
 
-	.navbar-nav > li > a
+	.navbar-nav 
 		color #fff
 		background black
-		padding 15px 10px 10px 10px
+		padding-top 5px
 		letter-spacing 6px
+		width 182px
 
 
 .animated
@@ -45,7 +46,63 @@ body
 
 .picture
 	height 70em
-	
+
+
+/* dropdown-menu*/
+.tp
+	.dropdown-menu
+		box-shadow: none;
+		border: none;
+		font-size: 0.7em;
+		background-color black
+
+
+		opacity:0;
+		margin: 0;
+		visibility:hidden;
+		display:block;
+		-webkit-transition: opacity 0.5s ease-in-out;
+		-moz-transition: opacity 0.5s ease-in-out;
+		-o-transition: opacity 0.5s ease-in-out;
+		transition: opacity 0.5s ease-in-out;
+
+
+	.dropdown:hover 
+		.dropdown-menu
+			padding-top 0
+			display: block
+			visibility:visible;
+			opacity:1;
+			margin: 0;
+			border-radius: 0
+
+
+			a
+				padding 10px
+				margin 0
+				color #fff
+
+			a:link,	
+			a:hover
+				background-color transparent
+				color: #ddd
+
+/* bio */	
+.bio
+	.intro
+		font-weight: normal
+		margin-top: 10em
+		
+		h4
+			font-size: 0.9em
+			margin: 0
+		p
+			font-size: 0.8em
+
+	img.profil
+		height 20em
+		width 20em
+
 
 /* tp design */
 	
@@ -54,6 +111,7 @@ body
 	background-color rgb(61, 91, 153)
 	color rgb(221, 237, 239)
 	border none
+
 
 	.navbar-nav > li > a
 		color #fff

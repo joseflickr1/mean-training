@@ -6,11 +6,22 @@ block main-content
 			.navbar-header
 				a.navbar-brand(href="/") 
 			.navbar-collapse.collapse
-				ul.nav.navbar-nav
-					li
-						a(href="#") Tito P. 
+				ul.nav.navbar-nav.dropdown
+					li.dropdown-toggle#dropdownMenu1(data-toggle="dropdown")  
+						a(href="#") Tito P.
+
+
+					ul.dropdown-menu(aria-labelledby="dropdownMenu1")
+						li
+							a(href="/design/tp") New
+						li
+							a(href="/design/tp/page") Conceptual
+						li
+							a(href="/design/tp/bio") Info
+
 
 				div(ng-include="'/partials/account/navbar-login'")
+
 	section.content
 		div(ng-view) 		
 

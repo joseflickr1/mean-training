@@ -6,11 +6,12 @@
 .navbar-inverse.tp {
   background-color: transparent;
 }
-.navbar-inverse.tp .navbar-nav > li > a {
+.navbar-inverse.tp .navbar-nav {
   color: #fff;
   background: #000;
-  padding: 15px 10px 10px 10px;
+  padding-top: 5px;
   letter-spacing: 6px;
+  width: 182px;
 }
 .animated {
   -webkit-animation-duration: 0.1s;
@@ -34,6 +35,55 @@
 }
 .picture {
   height: 70em;
+}
+/* dropdown-menu*/
+.tp .dropdown-menu {
+  box-shadow: none;
+  border: none;
+  font-size: 0.7em;
+  background-color: #000;
+  opacity: 0;
+  margin: 0;
+  visibility: hidden;
+  display: block;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.tp .dropdown:hover .dropdown-menu {
+  padding-top: 0;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  margin: 0;
+  border-radius: 0;
+}
+.tp .dropdown:hover .dropdown-menu a {
+  padding: 10px;
+  margin: 0;
+  color: #fff;
+}
+.tp .dropdown:hover .dropdown-menu a:link,
+.tp .dropdown:hover .dropdown-menu a:hover {
+  background-color: transparent;
+  color: #ddd;
+}
+/* bio */
+.bio .intro {
+  font-weight: normal;
+  margin-top: 10em;
+}
+.bio .intro h4 {
+  font-size: 0.9em;
+  margin: 0;
+}
+.bio .intro p {
+  font-size: 0.8em;
+}
+.bio img.profil {
+  height: 20em;
+  width: 20em;
 }
 /* tp design */
 .navbar-inverse {
