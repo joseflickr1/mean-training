@@ -26,7 +26,7 @@ angular.module('app').config(function($routeProvider, $locationProvider){
 	.when('/design', {templateUrl: '/partials/design/design', controller: 'mvDesignCtrl'})
 	.when('/design-forside-2', {templateUrl: '/partials/design/design-forside-2', controller: 'mvDesignCtrl'})
 
-	.when('/design/tp', {templateUrl: '/partials/design/tp/main', controller: 'mvDesignCtrl'})
+	.when('/design/tp', {templateUrl: '/partials/design/tp/main', controller: 'mvMainCtrl'})
 	.when('/design/tp/blogs', {templateUrl: '/partials/design/tp/blogs', controller: 'mvBioCtrl'})
 	.when('/design/tp/page', {templateUrl: '/partials/design/tp/page', controller: 'mvBioCtrl'})
 	.when('/design/tp/page2', {templateUrl: '/partials/design/tp/page2', controller: 'mvBioCtrl'})

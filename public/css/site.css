@@ -53,7 +53,7 @@
 }
 .tp .dropdown-menu li:hover .sub-menu li {
   background-color: #eee;
-/*opacity 0.9*/
+  opacity: 0.9;
 }
 .tp .dropdown-menu li:hover .sub-menu li a {
   margin: 0;
@@ -72,6 +72,8 @@
   font-family: 'Raleway Thin';
   letter-spacing: 11px;
   padding-top: 20px;
+  width: 278px;
+  line-height: 1.3em;
 }
 .tp .dropdown .dropdown-menu {
   opacity: 0;
