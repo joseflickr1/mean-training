@@ -6,9 +6,12 @@
 .navbar-inverse.tp {
   background-color: transparent;
 }
+.navbar-inverse.tp .navbar-nav > li > a {
+  color: #000;
+}
 .navbar-inverse.tp .navbar-nav {
-  color: #fff;
-  background: #000;
+  color: #000;
+/*background black*/
   padding-top: 2px;
 /*width 236px*/
 }
@@ -19,8 +22,9 @@
   animation-fill-mode: both;
 }
 .owl-carousel p {
-  font-size: 0.5em;
+  font-size: 0.4em;
   margin: 0;
+  letter-spacing: 4px;
 }
 .owl-theme .owl-controls {
   position: fixed;
@@ -69,11 +73,14 @@
   color: #000;
 }
 .tp .dropdown-toggle a {
-  font-family: 'Raleway Thin';
-  letter-spacing: 11px;
-  padding-top: 20px;
-  width: 278px;
-  line-height: 1.3em;
+/*font-family 'Raleway Thin';*/
+  letter-spacing: 9px;
+  padding: 20px 0 10px 0;
+  width: 274px;
+  font-weight: 400;
+/*line-height 1.3em*/
+  font-size: 0.7em;
+  color: #000;
 }
 .tp .dropdown .dropdown-menu {
   opacity: 0;
