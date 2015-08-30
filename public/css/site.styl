@@ -6,7 +6,7 @@ body
 
 
 .tp
-	font-family: 'Raleway Thin';
+	font-family 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size 2em
 
 .navbar-inverse.tp
@@ -15,9 +15,8 @@ body
 	.navbar-nav 
 		color #fff
 		background black
-		padding-top 5px
-		letter-spacing 6px
-		width 182px
+		padding-top 2px
+		/*width 236px*/
 
 
 .animated
@@ -26,7 +25,10 @@ body
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 
-
+.owl-carousel
+	p
+		font-size 0.5em
+		margin 0
 .owl-theme
 	.owl-controls
 		position: fixed;
@@ -42,6 +44,8 @@ body
 				border-radius inherit
 				letter-spacing 4px
 				padding 5px 10px 5px 10px
+				font-family 'Raleway Thin';
+
 
 
 .picture
@@ -50,43 +54,91 @@ body
 
 /* dropdown-menu*/
 .tp
-	.dropdown-menu
+
+	.dropdown-menu .sub-menu
+		left: 100%;
+		position: absolute;
+		top: -5px;
+		visibility: hidden;
+
+
+
+	.dropdown-menu li:hover .sub-menu
+		visibility: visible;
+		background-color transparent
+
+
+		li
+			background-color #eee
+			/*opacity 0.9*/
+
+			a
+				margin 0
+				padding 4px 20px
+				letter-spacing 1px	
+				color black
+				font-size 1.1em
+				font-weight 200
+				font-family 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				color rgba(0, 0, 0, 0.8)
+
+			a:hover
+				color black
+
+	.dropdown-toggle
+		a
+			font-family 'Raleway Thin';
+			letter-spacing 11px
+			padding-top 20px
+
+
+	.dropdown > .dropdown-menu
+		/*width 361px*/
+
+	.dropdown .dropdown-menu	
+		opacity 0
+		display block
+
+		transition: opacity .2s ease-in-out;
+		-moz-transition: opacity .2s ease-in-out;
+		-webkit-transition: opacity .2s ease-in-out;
+
 		box-shadow: none;
 		border: none;
 		font-size: 0.7em;
 		background-color black
 
-
-		opacity:0;
 		margin: 0;
-		visibility:hidden;
-		display:block;
-		-webkit-transition: opacity 0.5s ease-in-out;
-		-moz-transition: opacity 0.5s ease-in-out;
-		-o-transition: opacity 0.5s ease-in-out;
-		transition: opacity 0.5s ease-in-out;
+		border-radius: 0
+
+		a
+			padding 5px 10px
+			margin 0
+			color: #fff
+			font-family 'Raleway Thin';
+			letter-spacing 4px	
+			font-size 0.9em
+
+		a:hover
+			color #ddd	
+		a:link
+			background-color transparent
 
 
-	.dropdown:hover 
-		.dropdown-menu
-			padding-top 0
-			display: block
-			visibility:visible;
-			opacity:1;
-			margin: 0;
-			border-radius: 0
+	.dropdown:hover .dropdown-menu
+		display: block;
+		background-color black
 
+		opacity: 1.0;
+		transition: opacity .6s ease-in-out;
+		-moz-transition: opacity .6s ease-in-out;
+		-webkit-transition: opacity .6s ease-in-out;
 
-			a
-				padding 10px
-				margin 0
-				color #fff
+			
 
-			a:link,	
-			a:hover
-				background-color transparent
-				color: #ddd
-
+.ptl
+	padding-top 10px
+	
 /* bio */	
 .bio
 	.intro

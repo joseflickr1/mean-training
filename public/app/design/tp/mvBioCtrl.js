@@ -7,10 +7,11 @@ angular.module('app').controller('mvBioCtrl', function($scope) {
 
 	  angular.element(".owl-carousel").owlCarousel({
 	  	// center: false,
+		navText: ['previous','next'],
 
 	    items:1,
 	    loop:true,
-	    nav: false,
+	    nav: true,
 	    margin:0,
 	    dots: false,
 	    animateOut: 'fadeOut',

@@ -8,16 +8,26 @@ block main-content
 			.navbar-collapse.collapse
 				ul.nav.navbar-nav.dropdown
 					li.dropdown-toggle#dropdownMenu1(data-toggle="dropdown")  
-						a(href="#") Tito P.
+						a(href="/design/tp") Anastacio Tito
 
 
-					ul.dropdown-menu(aria-labelledby="dropdownMenu1")
+					ul.dropdown-menu.ptl(aria-labelledby="dropdownMenu1")
 						li
-							a(href="/design/tp") New
+							a(href="#") Photo Series
+							ul.dropdown-menu.sub-menu
+								li
+									a(href="/design/tp/page") The Imperfections of being Cool
+								li
+									a(href="/design/tp/page2") Urban Chicks
+								li
+									a(href="/design/tp/page3") The Goldfish who wanted to become a sushi, because he belived in Dreams
+
 						li
-							a(href="/design/tp/page") Conceptual
+							a(href="/design/tp/portraits") Portraits
 						li
-							a(href="/design/tp/bio") Info
+							a(href="/design/tp/blogs") Blogs and Links
+						li
+							a(href="/design/tp/contact") Contact Details	
 
 
 				div(ng-include="'/partials/account/navbar-login'")
@@ -38,4 +48,4 @@ block main-content
 	//- 				span.icon-bar
 
 	footer.container
-		p &copy; 2015 Photography
+		//- p &copy; 2015 Photography

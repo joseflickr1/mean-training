@@ -27,8 +27,12 @@ angular.module('app').config(function($routeProvider, $locationProvider){
 	.when('/design-forside-2', {templateUrl: '/partials/design/design-forside-2', controller: 'mvDesignCtrl'})
 
 	.when('/design/tp', {templateUrl: '/partials/design/tp/main', controller: 'mvDesignCtrl'})
-	.when('/design/tp/bio', {templateUrl: '/partials/design/tp/bio', controller: 'mvBioCtrl'})
+	.when('/design/tp/blogs', {templateUrl: '/partials/design/tp/blogs', controller: 'mvBioCtrl'})
 	.when('/design/tp/page', {templateUrl: '/partials/design/tp/page', controller: 'mvBioCtrl'})
+	.when('/design/tp/page2', {templateUrl: '/partials/design/tp/page2', controller: 'mvBioCtrl'})
+	.when('/design/tp/page3', {templateUrl: '/partials/design/tp/page3', controller: 'mvBioCtrl'})
+	.when('/design/tp/portraits', {templateUrl: '/partials/design/tp/portraits', controller: 'mvBioCtrl'})
+	.when('/design/tp/contact', {templateUrl: '/partials/design/tp/contact', controller: 'mvBioCtrl'})
 
 	
 	
