@@ -25,10 +25,18 @@ body {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-.owl-carousel p {
-  font-size: 0.4em;
-  margin: 0;
-  letter-spacing: 4px;
+.owl-carousel h5 {
+  font-size: 0.5em;
+  margin-top: 2px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.owl-carousel h6 {
+  float: right;
+  top: -33px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  position: relative;
 }
 .owl-theme .owl-controls {
   position: fixed;
