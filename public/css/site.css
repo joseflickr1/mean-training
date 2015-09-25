@@ -80,7 +80,7 @@ body {
 }
 .tp .dropdown-menu li:hover .sub-menu li a {
   margin: 0;
-  padding: 2px 10px;
+  padding: 5px 10px;
   letter-spacing: 1px;
   color: #000;
   font-size: 0.6em;
@@ -90,6 +90,12 @@ body {
 }
 .tp .dropdown-menu li:hover .sub-menu li a:hover {
   color: #008000;
+}
+.tp .dropdown-menu li:hover .sub-menu li:first-child {
+  padding-top: 5px;
+}
+.tp .dropdown-menu li:hover .sub-menu li:last-child {
+  padding-bottom: 5px;
 }
 .tp .dropdown-toggle a {
 /*font-family 'Raleway Thin';*/
