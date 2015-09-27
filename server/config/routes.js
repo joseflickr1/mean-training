@@ -36,7 +36,7 @@ module.exports = function(app) {
 
 	app.all('*', function(req, res, next) {
 	    // add details of what is allowed in HTTP request headers to the response headers
-	    res.header('Access-Control-Allow-Origin', 'http://dry-mean.herokuapp.com');
+	    res.header('Access-Control-Allow-Origin', 'http://hidden-journey-1760.herokuapp.com');
 	    res.header('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
 	    res.header('Access-Control-Allow-Credentials', false);
 	    res.header('Access-Control-Max-Age', '86400');
