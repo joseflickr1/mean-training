@@ -5,6 +5,10 @@ exports.getActivities = function(req, res) {
 	
 
 	Activity.find({}).populate('userId').exec(function(err, collection) {
+
+		res.header("Access-Control-Allow-Origin", "*");
+		res.header("Access-Control-Allow-Headers", "X-Requested-With");
+
 		res.send(collection);
 	})
 

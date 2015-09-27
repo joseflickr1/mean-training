@@ -16,8 +16,9 @@ module.exports = function(app, config) {
 	app.set('view engine', 'jade');
 	app.use(logger('dev'));
 	app.use(cookieParser());
-	app.use(bodyParser());
-	app.use(session({secret: 'mean training unicorn'}));
+	app.use(bodyParser.urlencoded({ extended: true }));
+	app.use(bodyParser.json());
+	app.use(session({secret: 'mean training unicorn',resave: true, saveUninitialized: true }));
 	app.use(passport.initialize());
 	app.use(passport.session());
 	app.use(stylus.middleware(
