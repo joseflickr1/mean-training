@@ -35,6 +35,9 @@ module.exports = function(app) {
 	// });
 
 	app.all('*', function(req, res, next) {
+		// * * *
+		// http://stackoverflow.com/questions/21221688/angularjs-resource-makes-http-options-request-instead-of-http-post-for-save-me
+	    // * * * 
 	    // add details of what is allowed in HTTP request headers to the response headers
 	    res.header('Access-Control-Allow-Origin', 'http://hidden-journey-1760.herokuapp.com');
 	    res.header('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
