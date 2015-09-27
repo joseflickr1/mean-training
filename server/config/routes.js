@@ -30,14 +30,13 @@ module.exports = function(app) {
 		res.end();
 	});
 	
-	
 	// app.all('/api/*', function(req, res) {
 	// 	res.sendStatus(404);
 	// });
 
 	app.all('*', function(req, res, next) {
 	    // add details of what is allowed in HTTP request headers to the response headers
-	    res.header('Access-Control-Allow-Origin', req.headers.origin);
+	    res.header('Access-Control-Allow-Origin', 'http://dry-mean.herokuapp.com');
 	    res.header('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
 	    res.header('Access-Control-Allow-Credentials', false);
 	    res.header('Access-Control-Max-Age', '86400');
