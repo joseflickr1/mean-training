@@ -17,6 +17,7 @@ angular.module('app').controller('mvBioCtrl', function($scope) {
 	    animateOut: 'fadeOut',
 	    animateIn: 'fadeIn',
 	    autoHeight: true,
+	    autoHeightClass: 'owl-height',
 	    // autoWidth: false,
 		// autoplay:true,
 
