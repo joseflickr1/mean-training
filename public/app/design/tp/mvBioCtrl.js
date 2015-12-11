@@ -16,6 +16,7 @@ angular.module('app').controller('mvBioCtrl', function($scope) {
 	    dots: false,
 	    animateOut: 'fadeOut',
 	    animateIn: 'fadeIn',
+	    autoHeight: true,
 	    // autoWidth: false,
 		// autoplay:true,
 
