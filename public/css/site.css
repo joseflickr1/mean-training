@@ -38,9 +38,12 @@ body {
   letter-spacing: 2px;
   position: relative;
 }
+.owl-carousel .item .slide {
+  background-color: #fff;
+}
 .owl-carousel .item .slide img {
   margin: 0 auto;
-  height: 563px;
+  height: 608px;
   width: auto;
 }
 .owl-theme .owl-controls {
