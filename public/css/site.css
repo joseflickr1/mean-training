@@ -39,11 +39,11 @@ body {
   position: relative;
 }
 .owl-carousel .item .slide {
-  background-color: #fff;
+  background-color: #337ab7;
 }
 .owl-carousel .item .slide img {
   margin: 0 auto;
-  height: 608px;
+  height: 503px;
   width: auto;
 }
 .owl-theme .owl-controls {
